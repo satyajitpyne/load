@@ -1,17 +1,13 @@
-var p = document.querySelector('.unline')
-var b = document.querySelector('button')
-var a = document.querySelector('.down h1')
-var k = 0 
-b.addEventListener('click', function(){
-    var j = setInterval(function(){
-        k++;
-        p.style.width = k+'%'
-        a.innerHTML = k
-    } ,50)
-
+var c = document.querySelector('.block')
+var g = document.querySelector('i')
+c.addEventListener('dblclick', function(){
+        g.style.opacity = 1
+        g.style.rotate = `${0}deg`
+        g.style.scale = 1.5
     setTimeout(function(){
-        clearInterval(j)
-    },5000)
-    
-
+        g.style.top = `${0}%`
+        g.style.rotate = `${50}deg`
+        g.style.fontSize = `${0}px`
+      
+    },1000)
 })
